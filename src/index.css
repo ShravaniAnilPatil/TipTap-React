@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ProseMirror {
+  outline: none;
+  padding: 16px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  min-height: 200px;
+  border: 1px solid #e5e7eb; /* Gray border */
+  border-radius: 8px; /* Rounded corners */
+}
