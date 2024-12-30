@@ -54,6 +54,24 @@ const Toolbar = ({ editor }) => {
       >
         Align Right
       </button>
+
+      <button
+        onClick={() =>
+          editor.chain().focus().insertContent('<div data-type="custom-box"></div>').run()
+        }
+        className="px-4 py-2 bg-green-500 text-white rounded"
+      >
+        Add Custom Box
+      </button>
+      <button
+        onClick={() =>
+          editor.chain().focus().insertContent('<div data-type="progress-bar"></div>').run()
+        }
+        className="px-4 py-2 bg-green-500 text-white rounded"
+      >
+        Add Progress Bar
+      </button>
+
     </div>
   );
 };

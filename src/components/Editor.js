@@ -5,18 +5,22 @@ import Underline from "@tiptap/extension-underline";
 import TextAlign from "@tiptap/extension-text-align";
 import Highlight from "@tiptap/extension-highlight";
 import Toolbar from "./Toolbar";
+import CustomBox from "../extensions/CustomBox";
+import ProgressBar from "../extensions/ProgressBar";
 
 const Editor = () => {
   const editor = useEditor({
     extensions: [
       StarterKit,
       Underline,
+      ProgressBar,
       Highlight.configure({
         multicolor: true,
       }),
       TextAlign.configure({
         types: ["heading", "paragraph"],
       }),
+      CustomBox, 
     ],
     content: "<p>Start editing here!</p>",
   });
